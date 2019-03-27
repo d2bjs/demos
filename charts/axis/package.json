@@ -1,0 +1,9 @@
+{
+  "name": "js-tdhmpe",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "d2b": "0.5.6",
+    "d3": "^5"
+  }
+}
