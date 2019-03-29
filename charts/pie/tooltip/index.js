@@ -29,7 +29,7 @@ var chart = select('#chart')
       // You can change the position of the box
       at: "top right",
       // You can toggle the movement of the tooltip with the mouse
-      followMouse: "false",
+      followMouse: false,
       my: "top",
       // This formats the string within the tooltip box
       // Anything enclosed in ticks represents the string
