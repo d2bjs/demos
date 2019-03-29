@@ -7,9 +7,12 @@ var axis = chartAxis();
 
 var chart = select("#chart")
   .datum({
+    y: {
+      label: "hello",
+    },
     sets: [
       {
-        generators: [svgArea(), svgLine(), svgScatter()],
+        generators: [{types:["area", "line", "scatter"]}],
         graphs: [
           {
             label: "Area 1",
@@ -35,8 +38,8 @@ var chart = select("#chart")
       }
     ]
   })
-  .call(axis);
+  .call(axis.advanced);
 
 window.addEventListener("resize", function() {
-  chart.call(axis);
+  chart.call(axis.advanced);
 });
