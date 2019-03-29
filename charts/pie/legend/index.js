@@ -32,6 +32,7 @@ var chart = select('#chart')
       icon: symbolSquare,
       // This changes the orientation of the lengend in relation to the pie chart
       orient: "right",
+      // This changes the pad angle of each pie slice in radians.
       padAngle: 10
     } 
   })
