@@ -47,7 +47,9 @@ var chart = select("#chart")
         // The actual data sets for the graphs 
         graphs: [
           {
+            // The title for an area graph
             label: "Area 1",
+            // The data points that will be used to generate the area graph
             values: [
               { x: 1, y: 15 },
               { x: 2, y: 18 },
