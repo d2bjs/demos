@@ -1,7 +1,6 @@
 // Import stylesheets
 import "./styles.css";
 import { select } from "d3";
-import { format } from "d3";
 import { chartSankey } from "d2b";
 
 // Creating the sankey object
@@ -34,9 +33,37 @@ chart
           // Anything enclosed in ticks represents the string
           // Anything enclosed in ticks AND "${}" will be computed
           html: function (data, source, target) { return ` <b>Source:</b> ${source.name} <b>Target:</b> ${target.name}: ${data.value} ` },
+          // Orientation of the tooltip
+          my: "bottom"
         }
       },
-      // Node are the beginning and end points that are joined by links
+      // A node connected to another node through a link
+      node: {
+        align: "left",
+        // Changes the color for ALL the nodes
+        color: data => colorGenerator(data.name),
+        // Toggle the drag-abiliy of the node along the x-axis
+        draggableX: true,
+        // Toggle the drag-ability of the node along the y-axis
+        draggableY: true,
+        // The max length of the label before it starts to wrap to the next line(s)
+        labelWrapLength: 25,
+        // Vertical separation between the nodes
+        padding: 50,
+        // Sort the nodes
+        sort: undefined,
+        // Tooltip is the box that pops up upon hovering over the link 
+        tooltip: {
+          // You can change the position of the tooltip 
+          at: "bottom right",
+          // Toggles the movement of the tooltip with the mouse
+          followMouse: true,
+          html: (data, value) => `<b>One Node -> ${data.name}:</b> ${value}`,
+          // Orientation of the tooltip
+          my: "right"
+        },
+      },
+      // The nodes mark the beginning and end points that are joined by links
       nodes: [
         // Node name represents the label of the node
         {name: 'Node A'},
