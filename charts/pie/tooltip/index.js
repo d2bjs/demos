@@ -26,7 +26,7 @@ var chart = select('#chart')
     // Tooltip is the box that pops up upon hovering over the pie slice
     tooltip:
     {
-      // You can change the position of the box
+      // You can change the position of the tooltip
       at: "top right",
       // You can toggle the movement of the tooltip with the mouse
       followMouse: false,
@@ -34,7 +34,7 @@ var chart = select('#chart')
       // This formats the string within the tooltip box
       // Anything enclosed in ticks represents the string
       // Anything enclosed in ticks AND "${}" will be computed
-      html: (d, percent) => `Pie slice label: ${d.label}. Pie slice value: ${d.value} (${format('.0%')(percent)})`
+      html: (d, percent) => `<b>Pie slice label:</b> ${d.label}. <b>Pie slice value:</b> ${d.value} (${format('.0%')(percent)})`
     } 
   })
 	.call(pie.advanced);
