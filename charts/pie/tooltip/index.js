@@ -30,6 +30,7 @@ var chart = select('#chart')
       at: "top right",
       // You can toggle the movement of the tooltip with the mouse
       followMouse: false,
+      // Orientation of the tooltip
       my: "top",
       // This formats the string within the tooltip box
       // Anything enclosed in ticks represents the string
