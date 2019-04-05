@@ -1,6 +1,6 @@
 // Import stylesheets
 import "./styles.css";
-import { select } from "d3";
+import { select, scaleOrdinal, schemeAccent } from "d3";
 import { chartSankey } from "d2b";
 
 // Creating the sankey object
@@ -10,6 +10,9 @@ var sankey = chartSankey();
 // Creating the data for the sankey chart to be generated
 var chart = select('#chart');
 
+// You can use different kinds of colorGenerators
+// ex) https://github.com/d3/d3-scale-chromatic
+var color = scaleOrdinal(schemeAccent);
   
 chart
     .datum({
@@ -41,7 +44,8 @@ chart
       node: {
         align: "left",
         // Changes the color for ALL the nodes
-        color: data => colorGenerator(data.name),
+        // Cycles through colors per node, each node reserving its own color
+        color: data => color(data.name),
         // Toggle the drag-abiliy of the node along the x-axis
         draggableX: true,
         // Toggle the drag-ability of the node along the y-axis
