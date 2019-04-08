@@ -10,12 +10,14 @@ var sunburst = chartSunburst();
 // Creating the data for the sunburst chart to be generated
 var chart = select('#chart')
 	.datum({
-		//sort: (a,b) => a.children.size - b.children.size,
+		// Sort by the size of the children
+		sort: (a,b) => b.size - a.size,
 		root: {
 			label: "root",
 			children: [
 				{
 					label: 'child 1',
+					size: 35,
 					children: [
 						{
 							label: 'child 1-1',

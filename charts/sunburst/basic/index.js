@@ -29,8 +29,6 @@ var chart = select('#chart')
 		// Changes the color for ALL the nodes
         // Cycles through colors per node, each node reserving its own color 
 		color: d => color(d.label),
-		// The roundness of the corners of each arc
-		cornerRadius: 25,
 		root: {
 			label: "root",
 			children: [
