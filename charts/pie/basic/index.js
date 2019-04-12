@@ -1,6 +1,6 @@
 // Import stylesheets
 import "./styles.css";
-import { select } from "d3";
+import {select} from "d3";
 import {chartPie} from "d2b";
 // Import a symbol for the legend icon
 import {symbolSquare} from "d3";
