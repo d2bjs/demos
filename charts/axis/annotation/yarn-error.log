@@ -1,0 +1,37 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add d2b
+
+PATH: 
+  /home/sanguinity/.rbenv/shims:/home/sanguinity/.rbenv/bin:/home/sanguinity/.rvm/gems/ruby-2.5.1/bin:/home/sanguinity/.rvm/gems/ruby-2.5.1@global/bin:/home/sanguinity/.rvm/rubies/ruby-2.5.1/bin:/home/sanguinity/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/sanguinity/.rvm/bin:/home/sanguinity/.rvm/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  11.2.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, lstat '/home/sanguinity/d2b/demos/charts/axis/annotation/node_modules/d2b/node_modules/d3/dist'
+
+npm manifest: 
+  {
+    "name": "js-tdhmpe",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+      "d2b": "^0.5.6",
+      "d3": "5.9.2"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.4.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
