@@ -1,12 +1,16 @@
 {
-  "name": "js-tdhmpe",
-  "version": "0.0.0",
-  "private": true,
+  "name": "d2b-sankey-link-nodes-demo",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
   "dependencies": {
     "d2b": "1.0.0-beta.2",
     "d3": "5.9.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.4.0"
   }
 }
