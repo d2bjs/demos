@@ -1,12 +1,13 @@
 {
   "name": "d2b-demos",
-  "version": "0.0.0",
-  "private": true,
+  "scripts": {
+    "propagate": "node propagate.js"
+  },
   "dependencies": {
     "d2b": "1.0.0-beta.2",
     "d3": "5.9.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0"
+    "recursive-readdir": "^2.2.2"
   }
 }

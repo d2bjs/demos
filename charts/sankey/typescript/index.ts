@@ -1,12 +1,16 @@
 import './styles.css';
-import { select } from 'd3';
+import { select, nest } from 'd3';
 import { chartSankey } from 'd2b';
+
+// Import the sankey data interface from d2b +1.0.0.
 import { ChartSankeyData } from 'd2b/src/types';
 
-const sankey = chartSankey();
+// Generators are not typed yet, for now refer to the api docs.
+const sankey: any = chartSankey();
 
 const chart = select('#chart');
 
+// Strictly type the sankey data.
 const datum: ChartSankeyData = {
   nodes: [
     {name: 'Node A'},
