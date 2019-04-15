@@ -1,7 +1,7 @@
 // Import stylesheets
 import "./styles.css";
 import { select } from "d3";
-import { chartAxis, svgArea, svgLine, svgScatter } from "d2b";
+import { chartAxis } from "d2b";
 
 // Creates the axis chart object
 var axis = chartAxis();

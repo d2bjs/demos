@@ -1,7 +1,7 @@
 // Import stylesheets
 import "./styles.css";
 import { select, annotationCalloutCircle, annotationBadge, symbolSquare } from "d3";
-import { chartAxis, svgArea, svgLine, svgScatter } from "d2b";
+import { chartAxis } from "d2b";
 
 var axis = chartAxis().y({linearPadding: [0, 0.5]});
 
@@ -42,7 +42,7 @@ var annotation2 = {
   }
 };
 
-// select chart and set datum
+// select chart and set datumsvgArea(), svgLine(), svgScatter()
 
 var chart = select('#chart')
 	.datum({
@@ -69,7 +69,7 @@ var chart = select('#chart')
 		],
 		sets: [
 			{
-				generators: [svgArea(), svgLine(), svgScatter()],
+				generators: [{types:["area", "line", "scatter"]}],
 				graphs: [
 			    {
 						// Used for the groups data array
