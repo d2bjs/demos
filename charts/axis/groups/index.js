@@ -109,7 +109,7 @@ const chart = select('#chart')
 				]
 			},
 			{
-				generators: [svgLine(), svgScatter()],
+				generators: [{types:["line", "scatter"]}],
 				graphs: [
 			    { 
 						// Used for the groups data array

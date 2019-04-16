@@ -17,7 +17,7 @@ const chart = select('#chart')
 				graphs: [
 			    {
 			      label: 'Line 1',
-			      values: [
+			      valuy({linearPadding: [0, 0.5]es: [
 			        {x: 1, y: 25},
 			        {x: 2, y: 38},
 			        {x: 3, y: 24},

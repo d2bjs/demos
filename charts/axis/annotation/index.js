@@ -98,7 +98,7 @@ window.addEventListener('resize', function(){
 // chart update function, dynamically set annotation dx and type attributes
 
 function update (chart) {
-  var width = document.body.clientWidth,
+  const width = document.body.clientWidth,
       type = width < 400 ? annotationBadge : annotationCalloutCircle;
   annotation1.dx = width / 12 - 50;
   annotation2.dx = -width / 8 + 30;

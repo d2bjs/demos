@@ -2,9 +2,9 @@ import "./styles.css";
 import { select } from "d3";
 import { chartSankey } from "d2b";
 
-var sankey = chartSankey();
+const sankey = chartSankey();
 
-var chart = select('#chart');
+const chart = select('#chart');
 
 chart
     .datum({
