@@ -1,5 +1,5 @@
 {
-  "name": "d2b-sunburst-root-demo",
+  "name": "d2b-sunburst-typescript-demo",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",

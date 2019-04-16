@@ -1,5 +1,10 @@
 {
-  "name": "js-tdhmpe",
+  "name": "d2b-sunburst-sort-demo",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
   "version": "0.0.0",
   "private": true,
   "dependencies": {
