@@ -2,11 +2,11 @@ import "./styles.css";
 import { chartSunburst } from "d2b"
 import { select } from "d3"
 
-var sunburst = chartSunburst();
+const sunburst = chartSunburst();
 
 sunburst.chartFrame().size({height: 500});
 
-var chart = select('.sunburst-chart');
+const chart = select('.sunburst-chart');
 
 chart
 	.datum({

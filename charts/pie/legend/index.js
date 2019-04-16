@@ -6,11 +6,11 @@ import {symbolSquare} from "d3";
 import { chartPie } from "d2b";
 
 // Creating the pie object
-var pie = chartPie();
+const pie = chartPie();
 
 // Div selection from index.html
 // Creating the data for the pie chart to be generated
-var chart = select('#chart')
+const chart = select('#chart')
 	.datum({
     // The values property can manipulate the actual pie slice data
     // Each item in the array represents an individual pie slice

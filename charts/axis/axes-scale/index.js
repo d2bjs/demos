@@ -4,11 +4,11 @@ import { select } from "d3";
 import { chartAxis, format } from "d2b";
 
 // Creating the axis object
-var axis = chartAxis();
+const axis = chartAxis();
 
 // Div selection from index.html
 // Creating the data for the axis chart to be generated
-var chart = select('#chart')
+const chart = select('#chart')
   .datum({
     // This is the top x-axis
     // These properties apply to the rest of the axes (x2, y, y2)

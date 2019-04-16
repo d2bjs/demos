@@ -2,9 +2,9 @@ import "./styles.css";
 import { select } from "d3";
 import { chartPie } from "d2b";
 
-var pie = chartPie();
+const pie = chartPie();
 
-var chart = select('#chart')
+const chart = select('#chart')
 	.datum([
 		{label: 'arc 1', value: 23},
 		{label: 'arc 2', value: 31},

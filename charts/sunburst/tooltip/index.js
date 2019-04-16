@@ -4,12 +4,12 @@ import { chartSunburst } from "d2b"
 import { select, format } from "d3"
 
 // Creating the sunburst object
-var sunburst = chartSunburst();
+const sunburst = chartSunburst();
 
 
 // Div selection from index.html
 // Creating the data for the sunburst chart to be generated
-var chart = select('#chart')
+const chart = select('#chart')
 	.datum({
 		// Tooltip is the box that pops up upon hovering over the surburst arc
 		tooltip:

@@ -4,15 +4,15 @@ import { select, scaleOrdinal, schemeAccent } from "d3";
 import { chartSankey } from "d2b";
 
 // Creating the sankey object
-var sankey = chartSankey();
+const sankey = chartSankey();
 
 // Div selection from index.html
 // Creating the data for the sankey chart to be generated
-var chart = select('#chart');
+const chart = select('#chart');
 
 // You can use different kinds of colorGenerators
 // ex) https://github.com/d3/d3-scale-chromatic
-var color = scaleOrdinal(schemeAccent);
+const color = scaleOrdinal(schemeAccent);
   
 chart
     .datum({

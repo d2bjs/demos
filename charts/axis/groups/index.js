@@ -3,11 +3,11 @@ import "./styles.css";
 import { select, annotationCalloutCircle, annotationBadge, symbolSquare } from "d3";
 import { chartAxis } from "d2b";
 
-var axis = chartAxis().y({linearPadding: [0, 0.5]});
+const axis = chartAxis();
 
 // define annotation objects
 
-var annotation1 = {
+const annotation1 = {
   location: 'y1',
   dy: 300,
   type: annotationCalloutCircle,
@@ -24,7 +24,7 @@ var annotation1 = {
   }
 };
 
-var annotation2 = {
+const annotation2 = {
   location: 'y1',
   dy: -200,
   type: annotationCalloutCircle,
@@ -44,8 +44,11 @@ var annotation2 = {
 
 // select chart and set datumsvgArea(), svgLine(), svgScatter()
 
-var chart = select('#chart')
+const chart = select('#chart')
 	.datum({
+		y : {
+			linearPadding: [0, 0.5]
+		},
 		// Need to create groups in the sets array
 		// This will group all those data sets together in one group
 		groups: [
@@ -155,7 +158,7 @@ window.addEventListener('resize', function(){
 // chart update function, dynamically set annotation dx and type attributes
 
 function update (chart) {
-  var width = document.body.clientWidth,
+  const width = document.body.clientWidth,
       type = width < 400 ? annotationBadge : annotationCalloutCircle;
   annotation1.dx = width / 12 - 50;
   annotation2.dx = -width / 8 + 30;

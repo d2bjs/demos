@@ -5,15 +5,15 @@ import { chartSunburst } from "d2b"
 import { select, scaleOrdinal, schemeAccent } from "d3"
 
 // Creating the sunburst object
-var sunburst = chartSunburst();
+const sunburst = chartSunburst();
 
 // You can use different kinds of colorGenerators
 // ex) https://github.com/d3/d3-scale-chromatic
-var color = scaleOrdinal(schemeAccent);
+const color = scaleOrdinal(schemeAccent);
 
 // Div selection from index.html
 // Creating the data for the sunburst chart to be generated
-var chart = select('#chart')
+const chart = select('#chart')
 	.datum({
 		// The roundness of the corners of each arc
 		cornerRadius: 15,

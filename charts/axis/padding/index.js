@@ -4,11 +4,11 @@ import { select } from "d3";
 import { chartAxis } from "d2b";
 
 // Creates the axis chart object
-var axis = chartAxis();
+const axis = chartAxis();
 
 // Div selection from index.html
 // Creating the data for the sankey chart to be generated
-var chart = select("#chart")
+const chart = select("#chart")
   .datum({
     // The chart's inner padding (not the legend)
     // If you do not specify each of the properties in the padding/margin object

@@ -3,11 +3,11 @@ import "./styles.css";
 import { select, annotationCalloutCircle, annotationBadge } from "d3";
 import { chartAxis} from "d2b";
 
-var axis = chartAxis();
+const axis = chartAxis();
 
 // define annotation objects
 
-var annotation1 = {
+const annotation1 = {
   location: 'y1',
   dy: -50,
   type: annotationCalloutCircle,
@@ -24,7 +24,7 @@ var annotation1 = {
   }
 };
 
-var annotation2 = {
+const annotation2 = {
   location: 'y1',
   dy: -200,
   type: annotationCalloutCircle,
@@ -44,7 +44,7 @@ var annotation2 = {
 
 // select chart and set datum
 
-var chart = select('#chart')
+const chart = select('#chart')
 	.datum({
 		y: {
       linearPadding: [-0.11, 0.22]      

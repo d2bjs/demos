@@ -3,11 +3,11 @@ import './styles.css';
 import { select } from 'd3';
 import { chartAxis } from 'd2b';
 
-var axis = chartAxis();
+const axis = chartAxis();
 
 // select chart and set datum
 
-var chart = select('#chart')
+const chart = select('#chart')
 	.datum({
 		sets: [
 			{

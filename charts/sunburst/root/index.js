@@ -4,12 +4,12 @@ import { chartSunburst } from "d2b"
 import { select } from "d3"
 
 // Creating the sunburst object
-var sunburst = chartSunburst();
+const sunburst = chartSunburst();
 
 
 // Div selection from index.html
 // Creating the data for the sunburst chart to be generated
-var chart = select('#chart')
+const chart = select('#chart')
 	.datum({
 		// This is the root of the tree/sunburst chart
 		// All the data below starts off here
