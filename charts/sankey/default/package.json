@@ -7,11 +7,12 @@
   },
   "version": "0.0.0",
   "private": true,
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
   "dependencies": {
     "d2b": "1.0.0-beta.2",
     "d3": "5.9.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.4.0"
   }
 }
