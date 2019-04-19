@@ -12,21 +12,18 @@ const chart = select('#chart')
   .datum({
     // This is the top x-axis
     // These properties apply to the rest of the axes (x2, y, y2)
-    x: {
+    x: {      
       scale: 
         {
-          // log base
-          //base: 5,
-          //clamp: true,
-          //constant: 2,
+          // The type of axis, how the axis data is represented
+          type: "log",
+          // This base needs to be here if you use "log" for type
+          base: 3,
           // Max and min bounds along the axis
           forceBounds: {
             max: 30,
             min: 1
           },
-          //nice: true ,
-        // The type of axis, how the axis data is represented
-        //type: "log"
         }
       , 
     },
