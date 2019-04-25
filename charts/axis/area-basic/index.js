@@ -1,7 +1,7 @@
 // Import stylesheets
 import "./styles.css";
 import { select } from "d3";
-import { chartAxis, format } from "d2b";
+import { chartAxis } from "d2b";
 
 // Creating the axis object
 const axis = chartAxis();

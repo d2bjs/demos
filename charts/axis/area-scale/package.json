@@ -1,5 +1,5 @@
 {
-  "name": "d2b-axis-axes-scale-demo",
+  "name": "d2b-axis-area-scale-demo",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",

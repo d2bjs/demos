@@ -13,23 +13,21 @@ const chart = select('#chart')
     // This is the top x-axis
     // These properties apply to the rest of the axes (x2, y, y2)
     x: {      
-      scale: 
-        {
-          // The type property allows you to use different properties
-          // these properties are NOT interchangable. For example:
-          // type: "log", will NOT work with the "clamp" property.
-          // This is because "clamp" uses the type: "continuous"
-          // The type of axis, how the axis data is represented
-          type: "log",
-          // This base needs to be here if you use "log" for type
-          base: 3,
-          // Max and min bounds along the axis
-          forceBounds: {
-            max: 30,
-            min: 1
-          },
-        }
-      , 
+      scale: {
+        // The type property allows you to use different properties
+        // these properties are NOT interchangable. For example:
+        // type: "log", will NOT work with the "clamp" property.
+        // This is because "clamp" uses the type: "continuous"
+        // The type of axis, how the axis data is represented
+        type: "log",
+        // This base needs to be here if you use "log" for type
+        base: 3,
+        // Max and min bounds along the axis
+        forceBounds: {
+          max: 30,
+          min: 1
+        },
+      } 
     },
     // These are the different data sets that will be displayed in the chart
     sets: [

@@ -1,5 +1,5 @@
 {
-  "name": "d2b-axis-basic-line-demo",
+  "name": "d2b-axis-default-scatter-sizes-demo",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
