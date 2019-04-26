@@ -47,6 +47,8 @@ const annotation2 = {
 const chart = select('#chart')
 	.datum({
 		y: {
+			// Padding between data (peaks and valleys of graph) and borders of chart
+			// If the annotaions are cut off, adjust these numbers
       linearPadding: [-0.11, 0.22]      
     },
 		annotations: [			
