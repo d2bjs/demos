@@ -1,20 +1,18 @@
 // Import stylesheets
 import './styles.css';
 import { select, symbolSquare, scaleLinear, } from 'd3';
-import { chartAxis } from 'd2b';
+import { chartAxis } from 'd2b';	
 
 const axis = chartAxis()
-const dotSize = scaleLinear().domain([5, 70]).range([10,6000000])
 
 const chart = select('#chart');
 	chart.datum({	
 		sets: [
 			{
 				generators: [
-					//svgScatter().psize(d => dotSize(d.size))
 					{
 						type: "scatter",
-						//size: psize(d => dotSize(d.size)),
+						size: 100,
 						symbol: symbolSquare,
 					},
 				],

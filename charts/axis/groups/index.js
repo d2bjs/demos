@@ -1,6 +1,6 @@
 // Import stylesheets
 import "./styles.css";
-import { select, annotationCalloutCircle, annotationBadge, symbolSquare } from "d3";
+import { select, annotationCalloutCircle, annotationBadge } from "d3";
 import { chartAxis } from "d2b";
 
 const axis = chartAxis();
@@ -58,7 +58,6 @@ const chart = select('#chart')
 				hidden: false,
 				// The name of this group and the group name in the sets array MUST match
 				label:  "Group 1",
-				legendIcon: symbolSquare,
 			},
 			// Second group
 			{
@@ -67,7 +66,6 @@ const chart = select('#chart')
 				hidden: false,
 				// The name of this group and the group name in the sets array MUST match
 				label:  "Group 2",
-				legendIcon: symbolSquare,
 			},
 		],
 		sets: [
