@@ -6,9 +6,7 @@ const sunburst = chartSunburst();
 
 sunburst.chartFrame().size({height: 500});
 
-const chart = select('.sunburst-chart');
-
-chart
+const chart = select('#chart')
 	.datum({
 	label: 'root',
 	children: [
@@ -62,12 +60,9 @@ chart
 		size: 25
 		}
 	]
-	});
-	  
-update();
+	})
+	.call(sunburst.advanced);
 
-function update () {
+window.addEventListener('resize', function(){
 	chart.call(sunburst.advanced);
-}
-
-window.addEventListener('resize', update);
+});

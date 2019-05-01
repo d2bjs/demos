@@ -1,7 +1,7 @@
 // Import stylesheets
 import './styles.css';
-import { select, symbolSquare, scaleLinear, } from 'd3';
-import { chartAxis } from 'd2b';	
+import { select, symbolSquare } from 'd3';
+import { chartAxis } from 'd2b';
 
 const axis = chartAxis()
 
@@ -13,7 +13,7 @@ const chart = select('#chart');
 					{
 						type: "scatter",
 						size: 100,
-						symbol: symbolSquare,
+            symbol: symbolSquare,
 					},
 				],
 				graphs: [
