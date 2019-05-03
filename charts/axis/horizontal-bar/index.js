@@ -1,16 +1,12 @@
 // Import stylesheets
 import './styles.css';
-import { select, format, axisBottom } from 'd3';
+import { select, format } from 'd3';
 import { chartAxis } from 'd2b';
 
 // Initialize axis-chart generator
 const axis = chartAxis();
 
-// Define d3 format
-//const format = format(',');
-    
-
-var chart = select('#chart')
+const chart = select('#chart')
 	.datum({
 		x: {
 			label: 'Acres',
