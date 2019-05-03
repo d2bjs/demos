@@ -81,7 +81,7 @@ const chart = select('#chart')
 								children: [
 									{
 										label: 'one-one',
-										size: 55,
+										size: 9,
 										x: 4,
 										y: 45
 									}
@@ -93,7 +93,7 @@ const chart = select('#chart')
 								children: [
 									{
 										label: 'two-one',
-										size: 50,
+										size: 5,
 										x: 5,
 										y: 15
 									},
@@ -102,13 +102,13 @@ const chart = select('#chart')
 										children: [
 											{
 												label: 'two-two-one',
-												size: 20,
+												size: 2,
 												x: 1,
 												y: 28
 											},
 											{
 												label: 'two-two-two',
-												size: 117,
+												size: 11,
 												x: 2,
 												y: 21
 											}
