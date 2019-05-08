@@ -14,12 +14,6 @@ const chart = select('#chart')
 		// Tooltip is the box that pops up upon hovering over the surburst arc
 		tooltip:
 		{
-			// You can change the position of the tooltip
-			at: "top right",
-			// You can toggle the movement of the tooltip with the mouse
-			followMouse: false,
-			// Orientation of the tooltip
-			my: "top",
 			// This formats the string within the tooltip box
 			// Anything enclosed in ticks represents the string
 			// Anything enclosed in ticks AND "${}" will be computed

@@ -8,12 +8,7 @@ const axis = chartAxis()
 const chart = select('#chart')
 	.datum({
 		x: {
-			// Without this scale object the linear scale being used will overflow off of the plane.
-			scale: 
-			{
-				type: "band",
-				domain: [1, 2, 3, 4, 5]
-			}
+			linearPadding: [-0.1, 0.1]
 		},
 		sets: [
 			{
@@ -34,7 +29,7 @@ const chart = select('#chart')
 			    {
 			      label: 'Area 2',
 			      values: [
-			        {x: 0, y: 41},
+			        {x: 1, y: 41},
 			        {x: 2, y: 60},
 			        {x: 3, y: 18},
 			        {x: 4, y: 3},

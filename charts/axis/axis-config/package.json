@@ -1,5 +1,5 @@
 {
-  "name": "d2b-axis-area-basic-demo",
+  "name": "d2b-axis-configuration-demo",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
