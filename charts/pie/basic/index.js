@@ -17,12 +17,12 @@ const chart = select('#chart')
     values: 
     [
       // The label (name) of the arc with a value (size) of the pie slice
-      {label: 'arc 1', value: 23},
+      {color: 'pink', label: 'arc 1', value: 23},
       // The color of the pie slice
       {color: 'black', label: 'arc 2', value: 31},
       // The default visibility of the pie slice
       // You can click on the legend icon to toggle the visibility
-      {empty: 'true', label: 'arc 3', value: 80},
+      {color: 'yellow', empty: 'true', label: 'arc 3', value: 80},
       // The legend icon, some examples are included here: https://github.com/d3/d3-shape#symbols
       // Need to import that symbol from d3 above
       {legendIcon: symbolSquare, label: 'arc 4', value: 8}

@@ -1,9 +1,7 @@
 // Import stylesheets
 import "./styles.css";
 import { select } from "d3";
-import { format } from "d3";
 import { chartPie } from "d2b";
-
 
 // Creating the pie object
 const pie = chartPie();
@@ -17,20 +15,13 @@ const chart = select('#chart')
     values: 
     [
       // The label (name) of the arc with a value (size) of the pie slice
-      {label: 'Arc label', value: 23},
-      // Tooltip is the box that pops up upon hovering over the pie slice
-      {tooltip: "Tooltip text here", label: 'arc 2', value: 31},
+      {label: 'arc 1', value: 23},
+      {label: 'arc 2', value: 31},
       {label: 'arc 3', value: 80},
       {label: 'arc 4', value: 8}
     ],
-    // Tooltip is the box that pops up upon hovering over the pie slice
-    tooltip:
-    {
-      // This formats the string within the tooltip box
-      // Anything enclosed in ticks represents the string
-      // Anything enclosed in ticks AND "${}" will be computed
-      html: (d, percent) => `<b>Pie slice label:</b> ${d.label}. <b>Pie slice value:</b> ${d.value} (${format('.0%')(percent)})`
-    } 
+    // This changes the padding angle between pie slices in radians.
+    padAngle: 0.5
   })
 	.call(pie.advanced);
 

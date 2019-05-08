@@ -32,10 +32,7 @@ const chart = select('#chart')
       icon: symbolSquare,
       // This changes the orientation of the lengend in relation to the pie chart
       orient: "right",
-    },
-    // This changes the padding angle between pie slices in radians.
-    padAngle: 0.1 
-
+    }
   })
 	.call(pie.advanced);
 
