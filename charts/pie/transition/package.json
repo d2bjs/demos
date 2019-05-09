@@ -1,5 +1,5 @@
 {
-  "name": "d2b-axis-curve-area-demo",
+  "name": "d2b-pie-transition-demo",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
