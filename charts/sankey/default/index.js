@@ -27,4 +27,4 @@ chart
     })
     .call(sankey.advanced);
 
-window.onresize = function () { chart.call(sankey); };
+window.onresize = function () { chart.call(sankey.advanced); };

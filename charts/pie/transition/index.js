@@ -9,6 +9,8 @@ click.addEventListener("click", function() {
 
 const pie = chartPie();
 
+var transition = false;
+
 const chart = select('#chart')
 	.datum([
 		{label: 'arc 1', value: 13},
@@ -17,7 +19,6 @@ const chart = select('#chart')
 		{label: 'arc 5', value: 80}
 	])
 	.call(pie.advanced);
-var transition = false;
 
 function changeChart() {
 	if(transition) 
