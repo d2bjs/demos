@@ -18,7 +18,7 @@ const chart = select('#chart')
 		// The roundness of the corners of each arc
 		cornerRadius: 10,
 		// Inner radius (the inside 'hole/gap')
-		innerRadius: (width, height) => Math.min(width, height) / 2,
+		innerRadius: (width, height) => Math.min(width, height) / 4,
 		// Outer radius (the outside ring)
 		outerRadius: (width, height) => Math.min(190, Math.min(width, height) / 1),
 		root: {

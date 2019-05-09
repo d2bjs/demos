@@ -10,7 +10,7 @@ body,
   z-index: 0;
 }
 
-.center {
+#button {
   z-index: 1;
   margin-left: 3%;
   position: absolute;
