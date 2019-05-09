@@ -16,11 +16,11 @@ const color = scaleOrdinal(schemeAccent);
 const chart = select('#chart')
 	.datum({
 		// The roundness of the corners of each arc
-		cornerRadius: 15,
+		cornerRadius: 10,
 		// Inner radius (the inside 'hole/gap')
-		innerRadius: (width, height) => Math.min(width, height) / 5,
+		innerRadius: (width, height) => Math.min(width, height) / 2,
 		// Outer radius (the outside ring)
-		outerRadius: (width, height) => Math.min(500, Math.min(width, height) / 1),
+		outerRadius: (width, height) => Math.min(190, Math.min(width, height) / 1),
 		root: {
 			label: "root",
 			children: [

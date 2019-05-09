@@ -6,7 +6,6 @@ const sunburst = chartSunburst();
 
 const chart = select('#chart')
 	.datum({
-	size: {height:500},
 	label: 'root',
 	root: {
 		children: [
