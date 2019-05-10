@@ -7,8 +7,6 @@ import { ChartSunburstNodeData } from 'd2b/src/types'
 
 const sunburst: any = chartSunburst();
 
-sunburst.chartFrame().size({height: 500});
-
 const chart = select('#chart');
 
 const datum: ChartSunburstNodeData = {

@@ -13,8 +13,8 @@ var transition = false;
 
 const chart = select('#chart')
 	.datum({
-	label: 'root',
 	root: {
+		label: 'root',
 		children: [
 			{
 			label: 'child 1',
@@ -74,9 +74,10 @@ const chart = select('#chart')
 function changeChart() {
 	if(transition)
 	{
-		chart	.datum({
-			label: 'root',
+		chart	
+		.datum({
 			root: {
+				label: 'root',
 				children: [
 					{
 					label: 'child 1',
@@ -140,8 +141,8 @@ function changeChart() {
 	{
 		chart	
 		.datum({
-			label: 'root',
 			root: {
+				label: 'root',
 				children: [
 					{
 					label: 'child 1',
