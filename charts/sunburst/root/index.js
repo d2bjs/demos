@@ -1,7 +1,7 @@
 // Import stylesheets
-import "./styles.css";
-import { chartSunburst } from "d2b"
-import { select } from "d3"
+import './styles.css';
+import { chartSunburst } from 'd2b';
+import { select } from 'd3';
 
 // Creating the sunburst object
 const sunburst = chartSunburst();
@@ -15,25 +15,25 @@ const chart = select('#chart')
 		// All the data below starts off here
 		root: {
 			// Color of a sunburst arc
-			color: "#00F0FF",
+			color: '#00F0FF',
 			// The text box that appears on the side of the chart when hovering over the layer
-			breadcrumb: "Breadcrumb!",
+			breadcrumb: 'Breadcrumb!',
 			// The name of the root layer that appears on the chart when hovering over the layer
-			label: "boot",
+			label: 'boot',
 			// This is all the data in the tree
 			children: [
 				{
 					// Tooltip is the box that pops up upon hovering over the link
 					// This will overwrite the label
-					tooltip: "This is a tooltip!",
+					tooltip: 'This is a tooltip!',
 					// Color of a sunburst arc
-					color: "#000000",
+					color: '#000000',
 					// The name that appears on the sunbusrt arc upon hovering 
 					label: 'child 1',
 					// Initial sunburst arc selection, looks zoomed in
 					selected: true,
 					// The text box that appears on the side of the chart when hovering over the layer
-					breadcrumb: "child1 breadcrumb",
+					breadcrumb: 'child1 breadcrumb',
 					// Has more children
 					children: [
 						{
@@ -90,4 +90,4 @@ const chart = select('#chart')
 		
 	window.addEventListener('resize', function(){
 		chart.call(sunburst.advanced);
-	})
+	});

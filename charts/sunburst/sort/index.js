@@ -1,7 +1,7 @@
 // Import stylesheets
-import "./styles.css";
-import { chartSunburst } from "d2b"
-import { select } from "d3"
+import './styles.css';
+import { chartSunburst } from 'd2b';
+import { select } from 'd3';
 
 // Creating the sunburst object
 const sunburst = chartSunburst();
@@ -13,7 +13,7 @@ const chart = select('#chart')
 		// Sort by the size of the children
 		sort: (a,b) => b.size - a.size,
 		root: {
-			label: "root",
+			label: 'root',
 			children: [
 				{
 					label: 'child 1',
@@ -72,4 +72,4 @@ const chart = select('#chart')
 		
 	window.addEventListener('resize', function(){
 		chart.call(sunburst.advanced);
-	})
+	});

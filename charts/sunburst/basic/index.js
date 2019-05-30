@@ -1,8 +1,8 @@
 // Import stylesheets
-import "./styles.css";
-import { chartSunburst } from "d2b"
+import './styles.css';
+import { chartSunburst } from 'd2b';
 // scaleOrdinal and schemeAccent is for the color generator for the arcs
-import { select, scaleOrdinal, schemeAccent } from "d3"
+import { select, scaleOrdinal, schemeAccent } from 'd3';
 
 // Creating the sunburst object
 const sunburst = chartSunburst();
@@ -30,7 +30,7 @@ const chart = select('#chart')
         // Cycles through colors per node, each node reserving its own color 
 		color: d => color(d.label),
 		root: {
-			label: "root",
+			label: 'root',
 			children: [
 				{
 					label: 'child 1',
@@ -88,4 +88,4 @@ const chart = select('#chart')
 		
 	window.addEventListener('resize', function(){
 		chart.call(sunburst.advanced);
-	})
+	});

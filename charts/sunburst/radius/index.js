@@ -1,15 +1,10 @@
 // Import stylesheets
-import "./styles.css";
-import { chartSunburst } from "d2b"
-// scaleOrdinal and schemeAccent is for the color generator for the arcs
-import { select, scaleOrdinal, schemeAccent } from "d3"
+import './styles.css';
+import { chartSunburst } from 'd2b';
+import { select } from 'd3';
 
 // Creating the sunburst object
 const sunburst = chartSunburst();
-
-// You can use different kinds of colorGenerators
-// ex) https://github.com/d3/d3-scale-chromatic
-const color = scaleOrdinal(schemeAccent);
 
 // Div selection from index.html
 // Creating the data for the sunburst chart to be generated
@@ -22,7 +17,7 @@ const chart = select('#chart')
 		// Outer radius (the outside ring)
 		outerRadius: (width, height) => Math.min(190, Math.min(width, height) / 1),
 		root: {
-			label: "root",
+			label: 'root',
 			children: [
 				{
 					label: 'child 1',
@@ -73,11 +68,10 @@ const chart = select('#chart')
 					size: 25
 				}
 			]
-		},
-		
+		}
 	})
 	.call(sunburst.advanced);
 		
 	window.addEventListener('resize', function(){
 		chart.call(sunburst.advanced);
-	})
+	});

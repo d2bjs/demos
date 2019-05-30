@@ -1,7 +1,7 @@
 // Import stylesheets
-import "./styles.css";
-import { chartSunburst } from "d2b"
-import { select, format } from "d3"
+import './styles.css';
+import { chartSunburst } from 'd2b';
+import { select, format } from 'd3';
 
 // Creating the sunburst object
 const sunburst = chartSunburst();
@@ -16,7 +16,7 @@ const chart = select('#chart')
 		{
 			// This formats the string within the tooltip box
 			// Anything enclosed in ticks represents the string
-			// Anything enclosed in ticks AND "${}" will be computed
+			// Anything enclosed in ticks AND '${}' will be computed
 			html: function (data, value, percent) { 
 				return `<b>Label:</b>${data.label} <b>Value:</b>${value} ${percent > 1 ? '' : ` ${format('.0%')(percent)}`}
 			` } 
@@ -25,7 +25,7 @@ const chart = select('#chart')
 		// All the data below starts off here
 		root: {
 			// The name of the root layer that appears on the chart when hovering over the layer
-			label: "root",
+			label: 'root',
 			// This is all the data in the tree
 			children: [
 				{
@@ -84,4 +84,4 @@ const chart = select('#chart')
 		
 	window.addEventListener('resize', function(){
 		chart.call(sunburst.advanced);
-	})
+	});
