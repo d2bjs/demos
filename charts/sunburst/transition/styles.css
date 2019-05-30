@@ -1,7 +1,6 @@
 html,
 body,
-#app,
-#chart {
+#app {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -10,11 +9,19 @@ body,
   z-index: 0;
 }
 
-#button {
-  z-index: 1;
-  margin-left: 3%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+#chart {
+  height: calc(100% - 50px);
 }
 
+button {
+  width: calc(100% - 20px);
+  background: steelblue;
+  color: white;
+  font-size: 15pt;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
