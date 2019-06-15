@@ -4,7 +4,7 @@
     "propagate": "node propagate.js"
   },
   "dependencies": {
-    "d2b": "1.0.8",
+    "d2b": "1.0.9",
     "d3": "5.9.2"
   },
   "devDependencies": {
